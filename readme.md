@@ -2,8 +2,6 @@
 
 A 3D interactive personal portfolio built with **Three.js**, **GSAP**, and **GLSL shaders**, showcasing my work in Cybersecurity and AI/ML security.
 
-> Live demo: [chitransh-saxena.vercel.app](https://chitransh-saxena.vercel.app)
-
 ---
 
 ## ✨ About
