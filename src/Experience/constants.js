@@ -197,10 +197,7 @@ export const RUBIK_SCALE = 0.021432;
 // ===== TODO: REPLACE WITH YOUR OWN LINKS =====
 export const LINKEDIN_URL = "https://www.linkedin.com/in/chitransh17";
 export const GITHUB_URL = "https://github.com/CHITRANSH1705";
-// TODO: this is still Joan's original itch.io link/icon - update this URL to
-// your own itch.io profile (or your TryHackMe profile, or anything else),
-// whenever you're ready to swap it manually.
-export const ITCHIO_URL = "https://jrefusta.itch.io/";
+export const ITCHIO_URL = "https://tryhackme.com/p/chitranshsaxena";
 
 // Photo frame links - clicking either frame opens the document in a new tab.
 // TODO: replace these placeholder URLs with your actual Google Drive / hosted links.
