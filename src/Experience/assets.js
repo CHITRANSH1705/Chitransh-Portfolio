@@ -39,6 +39,16 @@ export default [
         source: "/assets/textures/texture_paint.png",
         type: "texture",
       },
+      {
+        name: "copyrightTexture",
+        source: "/assets/textures/copyright-certificate.jpg",
+        type: "texture",
+      },
+      {
+        name: "researchPaperTexture",
+        source: "/assets/textures/research-paper.jpg",
+        type: "texture",
+      },
       { name: "_roomModel", source: "/assets/models/room.glb" },
       { name: "_roomModel2", source: "/assets/models/room2.glb" },
       { name: "_roomModel3", source: "/assets/models/room3.glb" },

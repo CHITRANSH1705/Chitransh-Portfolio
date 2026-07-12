@@ -24,6 +24,8 @@ import {
   LINKEDIN_URL,
   GITHUB_URL,
   ITCHIO_URL,
+  COPYRIGHT_CERTIFICATE_URL,
+  RESEARCH_PAPER_URL,
 } from "./constants.js";
 
 export default class Navigation {
@@ -408,6 +410,12 @@ export default class Navigation {
         break;
       case "itchio":
         window.open(ITCHIO_URL);
+        break;
+      case "copyrightFrame":
+        window.open(COPYRIGHT_CERTIFICATE_URL, "_blank", "noopener,noreferrer");
+        break;
+      case "researchPaperFrame":
+        window.open(RESEARCH_PAPER_URL, "_blank", "noopener,noreferrer");
         break;
     }
   };

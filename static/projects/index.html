@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects</title>
+  <style>
+    /*
+    TODO: This page is what shows on the "right monitor" screen in the 3D
+    room. It's a plain static HTML file - no build step - so you can edit
+    it directly and just refresh the browser to see changes.
+
+    To add another project: copy one .card block below and fill it in.
+    To remove one: delete its .card block.
+  */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #0ea5e9;
+      color: #ffffff;
+      padding: 28px 24px;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    h1 {
+      margin: 0 0 4px 0;
+      font-size: 26px;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      margin: 0 0 22px 0;
+      font-size: 13px;
+      color: #e0f2fe;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .card {
+      background: #7c3aed;
+      border-radius: 12px;
+      padding: 16px 18px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card h2 {
+      margin: 0 0 8px 0;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .badge {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      background: #f43f5e;
+      padding: 2px 8px;
+      border-radius: 999px;
+      letter-spacing: 0.5px;
+    }
+
+    .card p {
+      font-size: 12.5px;
+      line-height: 1.5;
+      color: #f1eaff;
+      margin: 0 0 12px 0;
+      flex-grow: 1;
+    }
+
+    .tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+
+    .tech span {
+      font-size: 10.5px;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+
+    .card a {
+      align-self: flex-start;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: #ffffff;
+      background: #f43f5e;
+      padding: 7px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .card a:hover {
+      filter: brightness(1.1);
+    }
+
+    .in-progress-note {
+      font-size: 11.5px;
+      color: #e0d4ff;
+      font-style: italic;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Projects</h1>
+  <p class="subtitle"><!-- TODO: swap for your own one-line intro --> Cybersecurity &amp; AI/ML security projects</p>
+
+  <div class="grid">
+
+    <!-- Project 1 -->
+    <div class="card">
+      <h2>Cloud Security Governance Platform</h2>
+      <p>Multi-cloud security monitoring, compliance tracking, risk management, and a CSPM dashboard for keeping cloud
+        environments audit-ready.</p>
+      <div class="tech">
+        <span>React</span><span>TypeScript</span><span>Node.js</span><span>Express</span>
+      </div>
+      <a href="https://github.com/CHITRANSH1705/Cloud-Security-Governance-Platform" target="_blank" rel="noopener">View
+        on GitHub →</a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="card">
+      <h2>0-Crack Forensic Tool</h2>
+      <!-- TODO: replace with your own description if this isn't quite right -->
+      <p>A Portable Digital Forensic Data Collector Built with Python
+        Overview The goal of this project is to automate digital evidence collection in a secure, tamper-proof way for
+        incident response, forensic analysis, and system monitoring</p>
+      <div class="tech">
+        <span>Python</span><span>Hashcat</span><span>John the Ripper</span>
+      </div>
+      <a href="https://github.com/CHITRANSH1705/0-Crack-Forensic-tool" target="_blank" rel="noopener">View on GitHub
+        →</a>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="card">
+      <h2>ThreatLens 2.0</h2>
+      <p>Checks URLs for security risks using the Google Safe Browsing API, detecting malware and phishing before you
+        open a suspicious link, with a built-in sandbox mode for safe viewing.</p>
+      <div class="tech">
+        <span>Python</span><span>JavaScript</span><span>Google Safe Browsing API</span>
+      </div>
+      <a href="https://github.com/CHITRANSH1705/ThreatLens-2.0" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="card">
+      <h2>AI Security Project <span class="badge">In Progress</span></h2>
+      <!-- TODO: fill in real description, tech stack, and link once this ships,
+           and add the GitHub link back in (see the pattern in the cards above) -->
+      <p>An AI/ML security research project, currently in active development.</p>
+      <p class="in-progress-note">Details coming soon.</p>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="card">
+      <h2>ChainCrypt</h2>
+      <p>
+        A blockchain-powered secure document sharing platform that ensures document
+        integrity, authenticity, and tamper-proof verification using cryptographic
+        hashing. Users can securely upload, verify, and manage digital documents
+        while leveraging blockchain principles for enhanced trust and transparency.
+      </p>
+      <div class="tech">
+        <div class="tech-stack">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Node.js</span>
+          <span>Express.js</span>
+          <span>MongoDB</span>
+          <span>Blockchain</span>
+          <span>SHA-256</span>
+        </div>
+      </div>
+
+      <a href="https://github.com/CHITRANSH1705/ChainCrypt" target="_blank" rel="noopener">
+        View on GitHub →
+      </a>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="card">
+      <h2>ThreatLens-2.0</h2>
+      <p>
+        A modern web app to check URLs for security risks using Google Safe Browsing API, ThreatLens helps you quickly
+        determine whether a link is safe before you open it. It integrates the Google Safe Browsing API to detect
+        malware, phishing, and other harmful threats, providing a sandbox mode for safely viewing suspicious pages.
+
+      <div class="tech">
+        <span>React</span>
+        <span>TypeScript</span>
+        <span>Vite</span>
+        <span>Tailwind CSS</span>
+        <span>Node.js</span>
+        <span>Express.js</span>
+        <span>AI Security</span>
+        <span>LLM</span>
+      </div>
+
+      <a href="https://github.com/CHITRANSH1705/ThreatLens-2.0" target="_blank" rel="noopener">
+        View on GitHub →
+      </a>
+
+
+    </div>
+</body>
+
+</html>

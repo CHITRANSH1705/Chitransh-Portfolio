@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>About</title>
+  <style>
+    /*
+    TODO: This page shows on the "left monitor" screen in the 3D room
+    (previously Joan's About-Me/Credits OS). It's plain HTML - no build
+    step - edit directly and refresh to see changes.
+  */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #0ea5e9;
+      color: #ffffff;
+      padding: 28px 24px;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    h1 {
+      margin: 0 0 4px 0;
+      font-size: 26px;
+      letter-spacing: 1px;
+    }
+
+    .subtitle {
+      margin: 0 0 22px 0;
+      font-size: 13px;
+      color: #e0f2fe;
+    }
+
+    .card {
+      background: #7c3aed;
+      border-radius: 12px;
+      padding: 18px 20px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+      margin-bottom: 16px;
+    }
+
+    .card h2 {
+      margin: 0 0 10px 0;
+      font-size: 16px;
+    }
+
+    .card p {
+      font-size: 12.5px;
+      line-height: 1.5;
+      color: #f1eaff;
+      margin: 0 0 14px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      font-size: 12.5px;
+      font-weight: 600;
+      color: #ffffff;
+      background: #f43f5e;
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-right: 8px;
+    }
+
+    .btn:hover {
+      filter: brightness(1.1);
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .contact-row .label {
+      width: 70px;
+      color: #e0d4ff;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    .contact-row a,
+    .contact-row span.value {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .contact-row a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Chitransh Saxena</h1>
+  <!-- TODO: swap for your own one-line intro if you'd like -->
+  <p class="subtitle">Cybersecurity Student &amp; Bug Bounty Hunter</p>
+
+  <div class="card">
+    <h2>About Me</h2>
+    <!-- TODO: replace this paragraph with your own about-me text -
+         background, interests, what you're focused on, etc. -->
+    <p>Hi, I'm Chitransh Saxena — a passionate Computer Science student and developer with a strong interest in software
+      . enjoy solving complex technical problems by combining analytical thinking with practical implementation, whether
+      it's building secure applications, analyzing malware, or developing modern web platforms
+      My experience spans cybersecurity internships with the UP Cyber Crime Cell and Infosec Dot, where I worked on
+      digital forensics, incident response, malware traffic analysis, OSINT investigations, and vulnerability
+      assessments
+      engineering, cybersecurity, and artificial intelligence.</p>
+  </div>
+
+  <div class="card">
+    <h2>Resume</h2>
+    <!-- TODO: drop your resume PDF at static/assets/resume/resume.pdf,
+         then this link and preview will work automatically -->
+    <p>Download my resume for a full overview of my experience and projects.</p>
+    <a class="btn" href="/assets/resume/resume.pdf" target="_blank" rel="noopener">Download Resume →</a>
+  </div>
+
+  <div class="card">
+    <h2>Contact</h2>
+    <div class="contact-row">
+      <span class="label">Email</span>
+      <a href="mailto:chitranshsaxena1705@gmail.com">chitranshsaxena1705@gmail.com</a>
+    </div>
+    <div class="contact-row">
+      <span class="label">Location</span>
+      <span class="value">Dehradun, India</span>
+    </div>
+    <div class="contact-row">
+      <span class="label">LinkedIn</span>
+      <a href="https://www.linkedin.com/in/chitransh17" target="_blank" rel="noopener">linkedin.com/in/chitransh17</a>
+    </div>
+    <div class="contact-row">
+      <span class="label">GitHub</span>
+      <a href="https://github.com/CHITRANSH1705" target="_blank" rel="noopener">
+        github.com/CHITRANSH1705
+      </a>
+    </div>
+
+    <div class="contact-row">
+      <span class="label">TryHackMe</span>
+      <a href="https://tryhackme.com/p/chitranshsaxena" target="_blank" rel="noopener">
+        tryhackme.com/p/chitranshsaxena
+      </a>
+    </div>
+
+</html>

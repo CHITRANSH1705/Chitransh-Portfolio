@@ -27,6 +27,8 @@ export const CRT_UNIFORMS = {
   uBrightness: 2.5,
   uVignetteRoundness: 1,
 };
+// TODO: this loads Joan's own hosted mini-game - replace with your own
+// hosted app URL, or remove the arcade machine feature if you don't have one
 export const ARCADE_IFRAME_SRC = "https://joan-arcade-machine.vercel.app";
 export const ARCADE_IFRAME_PADDING = "16px";
 export const ARCADE_MACHINE_CAMERA_POSITION = new Vector3(-1.7, 5.5, 2.3009);
@@ -88,7 +90,11 @@ export const LEFT_MONITOR_CSS_OBJECT_POSITION = new Vector3(
   -4.23009
 );
 export const LEFT_MONITOR_CSS_OBJECT_SCALE = new Vector3(0.00102, 0.00102, 1);
-export const LEFT_MONITOR_IFRAME_SRC = "https://joan-os.vercel.app";
+// This now points at your resume + contact page, bundled directly in this
+// repo at static/about/index.html - edit that file directly (plain HTML/CSS,
+// no build step needed). Drop your resume PDF at static/assets/resume/resume.pdf
+// and fill in your real contact details in that file.
+export const LEFT_MONITOR_IFRAME_SRC = "/about/index.html";
 export const LEFT_MONITOR_CAMERA_POSITION = new Vector3(1.06738, 2.60725, -1.6);
 export const LEFT_MONITOR_CAMERA_QUATERNION = new Quaternion(
   0,
@@ -111,7 +117,10 @@ export const RIGHT_MONITOR_CSS_OBJECT_POSITION = new Vector3(
 
 export const RIGHT_MONITOR_CSS_OBJECT_SCALE = new Vector3(0.00102, 0.00102, 1);
 export const RIGHT_MONITOR_CSS_OBJECT_ROTATION_Y = (-7.406 * Math.PI) / 180;
-export const RIGHT_MONITOR_IFRAME_SRC = "https://joan-art-gallery.vercel.app";
+// This now points at your own project showcase, bundled directly in this
+// repo at static/projects/index.html - edit that file directly to add,
+// remove, or update projects (plain HTML/CSS, no build step needed).
+export const RIGHT_MONITOR_IFRAME_SRC = "/projects/index.html";
 export const RIGHT_MONITOR_CAMERA_POSITION = new Vector3(
   2.13997,
   2.60716,
@@ -143,6 +152,8 @@ export const ELEMENTS_TO_RAYCAST = [
   "rightMonitorScreen",
   "whiteboard",
   "whiteboardCanvas",
+  "copyrightFrame",
+  "researchPaperFrame",
 ];
 export const ORBIT_CONTROLS_CONFIG = {
   enabled: false,
@@ -183,9 +194,36 @@ export const RUBIK_POSITION = new Vector3(-0.67868, 1.499, -3.92849);
 export const RUBIK_SCALE = 0.021432;
 
 // Links
-export const LINKEDIN_URL = "https://www.linkedin.com/in/joan-ramos-refusta/";
-export const GITHUB_URL = "https://github.com/jrefusta";
+// ===== TODO: REPLACE WITH YOUR OWN LINKS =====
+export const LINKEDIN_URL = "https://www.linkedin.com/in/chitransh17";
+export const GITHUB_URL = "https://github.com/CHITRANSH1705";
+// TODO: this is still Joan's original itch.io link/icon - update this URL to
+// your own itch.io profile (or your TryHackMe profile, or anything else),
+// whenever you're ready to swap it manually.
 export const ITCHIO_URL = "https://jrefusta.itch.io/";
+
+// Photo frame links - clicking either frame opens the document in a new tab.
+// TODO: replace these placeholder URLs with your actual Google Drive / hosted links.
+export const COPYRIGHT_CERTIFICATE_URL = "https://drive.google.com/file/d/1nZZvaxXpxwHCHrYSk932so9F6vYwsLZ0/view?usp=sharing";
+export const RESEARCH_PAPER_URL = "https://drive.google.com/file/d/17i6HhLDudP-_L5ZPcmKqYNsws-sGDlgG/view?usp=drive_link";
+// ===== END TODO: LINKS =====
 
 // Top Chair
 export const TOP_CHAIR_POSITION = new Vector3(1.4027, 0.496728, -1.21048);
+
+// Photo Frames (LinkedIn / GitHub) - mounted above the whiteboard.
+// Anchored off WHITEBOARD_CAMERA_TARGET, the validated point the camera
+// already flies to when the whiteboard is clicked, since the whiteboard
+// glb's raw node transform isn't reliably decodable on its own.
+export const FRAME_WIDTH = 0.75;
+export const FRAME_HEIGHT = 0.95;
+export const FRAME_DEPTH = 0.05;
+export const FRAME_BORDER = 0.07;
+export const FRAME_ROTATION_Y = 0;
+export const FRAME_BORDER_COLOR = 0xeda72d;
+// These two frame positions are physical wall slots (left/right), decoupled
+// from content so swapping what's displayed doesn't require a rename.
+// Left frame = copyright certificate, Right frame = research paper.
+// Both frames are now clickable - clicking opens the URL defined above.
+export const LEFT_FRAME_POSITION = new Vector3(-3.95, 5.1, -4.55);
+export const RIGHT_FRAME_POSITION = new Vector3(-2.85, 5.1, -4.55);

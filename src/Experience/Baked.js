@@ -26,6 +26,17 @@ export default class Baked {
     return texture;
   };
 
+  // The clapperboard shelf prop ("Claqueta.002" in the source model) has
+  // "JOAN RAMOS" baked into its own separate texture - unlike the main room
+  // walls/floor (which are one big baked texture atlas we can't selectively
+  // edit), this is its own mesh, so it can just be removed outright.
+  removeClapperboard = (room) => {
+    const clapperboard = room.getObjectByName("Claqueta.002");
+    if (clapperboard) {
+      clapperboard.parent.remove(clapperboard);
+    }
+  };
+
   setModels = () => {
     this.model = {};
     this.model.room1 = this.resources.items._roomModel.scene;

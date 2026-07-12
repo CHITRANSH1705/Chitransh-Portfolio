@@ -5,6 +5,7 @@ import TopChair from "./TopChair.js";
 import Whiteboard from "./Whiteboard.js";
 import Carpet from "./Carpet.js";
 import ArcadeScreen from "./ArcadeScreen.js";
+import PhotoFrames from "./PhotoFrames.js";
 import LeftMonitorScreen from "./LeftMonitorScreen.js";
 import RightMonitorScreen from "./RightMonitorScreen.js";
 import RubiksCube from "./RubiksCube.js";
@@ -28,6 +29,7 @@ export default class World {
         this.setWhiteboard();
         this.setCarpet();
         this.setArcadeScreen();
+        this.setPhotoFrames();
         this.setLeftMonitorScreen();
         this.setRightMonitorScreen();
         this.setTopChair();
@@ -73,6 +75,10 @@ export default class World {
 
   setArcadeScreen() {
     this.arcadeScreen = new ArcadeScreen();
+  }
+
+  setPhotoFrames() {
+    this.photoFrames = new PhotoFrames();
   }
 
   setLeftMonitorScreen() {
